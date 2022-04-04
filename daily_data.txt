@@ -21,10 +21,10 @@ https://api.glassnode.com/v1/metrics/blockchain/utxo_spent_value_median utxo_val
 https://api.glassnode.com/v1/metrics/fees/volume_sum fees v
 https://api.glassnode.com/v1/metrics/fees/volume_mean fees_mean v
 https://api.glassnode.com/v1/metrics/fees/volume_median fees_median v
-https://api.glassnode.com/v1/metrics/indicators/pi_cycle_top pi_cycle_top_SMA111 ma111 pi_cycle_top_SMA350X2 ma350x2
-https://api.glassnode.com/v1/metrics/indicators/difficulty_ribbon difficulty_ribbon_ma128 ma128 difficulty_ribbon_ma14 ma14 difficulty_ribbon_ma200 ma200 difficulty_ribbon_ma25 ma25 difficulty_ribbon_ma40 ma40 difficulty_ribbon_ma60 ma60 difficulty_ribbon_ma9 ma9 difficulty_ribbon_ma90 ma90
+https://api.glassnode.com/v1/metrics/indicators/pi_cycle_top pi_cycle_top_SMA111 o.ma111 pi_cycle_top_SMA350X2 o.ma350x2
+https://api.glassnode.com/v1/metrics/indicators/difficulty_ribbon difficulty_ribbon_ma128 o.ma128 difficulty_ribbon_ma14 o.ma14 difficulty_ribbon_ma200 o.ma200 difficulty_ribbon_ma25 o.ma25 difficulty_ribbon_ma40 o.ma40 difficulty_ribbon_ma60 o.ma60 difficulty_ribbon_ma9 o.ma9 difficulty_ribbon_ma90 o.ma90
 https://api.glassnode.com/v1/metrics/indicators/sopr sopr v
-https://api.glassnode.com/v1/metrics/indicators/stock_to_flow_ratio stock_to_flow_ratio v
+https://api.glassnode.com/v1/metrics/indicators/stock_to_flow_ratio days_till_halving o.daysTillHalving stock_to_flow_ratio_price o.price stock_to_flow_ratio_ratio o.ratio
 https://api.glassnode.com/v1/metrics/institutions/purpose_etf_holdings_sum purpose_etf_holdings_sum v
 https://api.glassnode.com/v1/metrics/institutions/purpose_etf_flows_sum purpose_etf_flows_sum v
 https://api.glassnode.com/v1/metrics/market/marketcap_usd market_cap v
@@ -41,3 +41,137 @@ https://api.glassnode.com/v1/metrics/transactions/size_mean transaction_size_mea
 https://api.glassnode.com/v1/metrics/transactions/transfers_volume_sum transfer_volume v
 https://api.glassnode.com/v1/metrics/transactions/transfers_volume_mean transfer_volume_mean v
 https://api.glassnode.com/v1/metrics/transactions/transfers_volume_median transfer_volume_median v
+https://api.glassnode.com/v1/metrics/addresses/non_zero_count addresses_non_zero_balances v
+https://api.glassnode.com/v1/metrics/addresses/min_point_zero_1_count addresses_001 v
+https://api.glassnode.com/v1/metrics/addresses/min_point_1_count addresses_01 v
+https://api.glassnode.com/v1/metrics/addresses/min_1_count addresses_1 v
+https://api.glassnode.com/v1/metrics/addresses/min_10_count addresses_10 v
+https://api.glassnode.com/v1/metrics/addresses/min_100_count addresses_100 v
+https://api.glassnode.com/v1/metrics/addresses/min_1k_count addresses_1000 v
+https://api.glassnode.com/v1/metrics/addresses/min_10k_count addresses_10000 v
+https://api.glassnode.com/v1/metrics/blockchain/utxo_profit_relative utxo_profit_relative v
+https://api.glassnode.com/v1/metrics/blockchain/utxo_profit_count utxo_profit v
+https://api.glassnode.com/v1/metrics/blockchain/utxo_loss_count utxo_loss v
+https://api.glassnode.com/v1/metrics/distribution/balance_exchanges_relative balance_exchanges_relative v
+https://api.glassnode.com/v1/metrics/distribution/exchange_net_position_change exchange_net_position_change v
+https://api.glassnode.com/v1/metrics/fees/fee_ratio_multiple fee_ratio_multiple v
+https://api.glassnode.com/v1/metrics/indicators/cdd cdd v
+https://api.glassnode.com/v1/metrics/indicators/cdd_supply_adjusted cdd_supply_adjusted v
+https://api.glassnode.com/v1/metrics/indicators/cdd_supply_adjusted_binary cdd_supply_adjusted_binary v
+https://api.glassnode.com/v1/metrics/indicators/reserve_risk reserve_risk v
+https://api.glassnode.com/v1/metrics/indicators/cvdd cvdd v
+https://api.glassnode.com/v1/metrics/indicators/cyd cyd v
+https://api.glassnode.com/v1/metrics/indicators/cyd_supply_adjusted cyd_supply_adjusted v
+https://api.glassnode.com/v1/metrics/indicators/cdd90_age_adjusted cdd90_age_adjusted v
+https://api.glassnode.com/v1/metrics/indicators/balanced_price_usd balanced_price_usd v
+https://api.glassnode.com/v1/metrics/indicators/puell_multiple puell_multiple v
+https://api.glassnode.com/v1/metrics/indicators/average_dormancy average_dormancy v
+https://api.glassnode.com/v1/metrics/indicators/average_dormancy_supply_adjusted average_dormancy_supply_adjusted v
+https://api.glassnode.com/v1/metrics/indicators/dormancy_flow dormancy_flow v
+https://api.glassnode.com/v1/metrics/indicators/rhodl_ratio rhodl_ratio v
+https://api.glassnode.com/v1/metrics/indicators/investor_capitalization investor_capitalization v
+https://api.glassnode.com/v1/metrics/indicators/liveliness liveliness v
+https://api.glassnode.com/v1/metrics/indicators/nvt nvt v
+https://api.glassnode.com/v1/metrics/indicators/nvts nvts v
+https://api.glassnode.com/v1/metrics/indicators/velocity velocity v
+https://api.glassnode.com/v1/metrics/indicators/realized_profit realized_profit v
+https://api.glassnode.com/v1/metrics/indicators/realized_loss realized_loss v
+https://api.glassnode.com/v1/metrics/indicators/net_realized_profit_loss net_realized_profit_loss v
+https://api.glassnode.com/v1/metrics/indicators/realized_profit_loss_ratio realized_profit_loss_ratio v
+https://api.glassnode.com/v1/metrics/indicators/realized_profits_to_value_ratio realized_profits_to_value_ratio v
+https://api.glassnode.com/v1/metrics/indicators/difficulty_ribbon_compression difficulty_ribbon_compression v
+https://api.glassnode.com/v1/metrics/indicators/hash_ribbon hash_ribbon_buy o.buy hash_ribbon_capitulation o.capitulation hash_ribbon_crossed o.crossed hash_ribbon_ma30 o.ma30 hash_ribbon_ma60 o.ma60
+https://api.glassnode.com/v1/metrics/indicators/sopr_adjusted sopr_adjusted v
+https://api.glassnode.com/v1/metrics/indicators/asol asol v
+https://api.glassnode.com/v1/metrics/indicators/msol msol v
+https://api.glassnode.com/v1/metrics/indicators/soab soab_1d_1w o.1d_1w soab_1h o.1h soab_1h_24h o.1h_24h soab_1m_3m o.1m_3m soab_1w_1m o.1w_1m soab_1y_2y o.1y_2y soab_2y_3y o.2y_3y soab_3m_6m o.3m_6m soab_3y_5y o.3y_5y soab_5y_7y o.5y_7y soab_6m_12m o.6m_12m soab_7y_10Y o.7y_10y soab_more_10y o.more_10y
+https://api.glassnode.com/v1/metrics/indicators/sol_1h sol_1h v
+https://api.glassnode.com/v1/metrics/indicators/sol_1h_24h sol_1h_24h v
+https://api.glassnode.com/v1/metrics/indicators/sol_1d_1w sol_1d_1w v
+https://api.glassnode.com/v1/metrics/indicators/sol_1w_1m sol_1w_1m v
+https://api.glassnode.com/v1/metrics/indicators/sol_1m_3m sol_1m_3m v
+https://api.glassnode.com/v1/metrics/indicators/sol_3m_6m sol_3m_6m v
+https://api.glassnode.com/v1/metrics/indicators/sol_6m_12m sol_6m_12m v
+https://api.glassnode.com/v1/metrics/indicators/sol_1y_2y sol_1y_2y v
+https://api.glassnode.com/v1/metrics/indicators/sol_2y_3y sol_2y_3y v
+https://api.glassnode.com/v1/metrics/indicators/sol_3y_5y sol_3y_5y v
+https://api.glassnode.com/v1/metrics/indicators/sol_5y_7y sol_5y_7y v
+https://api.glassnode.com/v1/metrics/indicators/sol_7y_10y sol_7y_10y v
+https://api.glassnode.com/v1/metrics/indicators/sol_more_10y sol_more_10y v
+https://api.glassnode.com/v1/metrics/indicators/svab svab o.1d_1w svab_1h o.1h svab_1h_24h o.1h_24h svab_1m_3m o.1m_3m svab_1w_1m o.1w_1m svab_1y_2y o.1y_2y svab_2y_3y o.2y_3y svab_3m_6m o.3m_6m svab_3y_5y o.3y_5y svab_5y_7y o.5y_7y svab_6m_12m o.6m_12m svab_7y_10y o.7y_10y svab_more_10y o.more_10y
+https://api.glassnode.com/v1/metrics/indicators/svl_1h svl_1h v
+https://api.glassnode.com/v1/metrics/indicators/svl_1h_24h svl_1h_24h v
+https://api.glassnode.com/v1/metrics/indicators/svl_1d_1w svl_1d_1w v
+https://api.glassnode.com/v1/metrics/indicators/svl_1w_1m svl_1w_1m v
+https://api.glassnode.com/v1/metrics/indicators/svl_1m_3m svl_1m_3m v
+https://api.glassnode.com/v1/metrics/indicators/svl_3m_6m svl_3m_6m v
+https://api.glassnode.com/v1/metrics/indicators/svl_6m_12m svl_6m_12m v
+https://api.glassnode.com/v1/metrics/indicators/svl_1y_2y svl_1y_2y v
+https://api.glassnode.com/v1/metrics/indicators/svl_2y_3y svl_2y_3y v
+https://api.glassnode.com/v1/metrics/indicators/svl_3y_5y svl_3y_5y v
+https://api.glassnode.com/v1/metrics/indicators/svl_5y_7y svl_5y_7y v
+https://api.glassnode.com/v1/metrics/indicators/svl_7y_10y svl_7y_10y v
+https://api.glassnode.com/v1/metrics/indicators/svl_more_10y svl_more_10y v
+https://api.glassnode.com/v1/metrics/indicators/ssr ssr_h o.h ssr_l o.l	ssr_v o.v
+https://api.glassnode.com/v1/metrics/indicators/ssr_oscillator ssr_oscillator v
+https://api.glassnode.com/v1/metrics/indicators/stock_to_flow_deflection stock_to_flow_deflection v
+https://api.glassnode.com/v1/metrics/indicators/accumulation_trend_score accumulation_trend_score_price o.price	accumulation_trend_score_price_score o.score
+https://api.glassnode.com/v1/metrics/indicators/net_unrealized_profit_loss net_unrealized_profit_loss v
+https://api.glassnode.com/v1/metrics/indicators/unrealized_profit unrealized_profit v
+https://api.glassnode.com/v1/metrics/indicators/unrealized_loss unrealized_loss v
+https://api.glassnode.com/v1/metrics/indicators/seller_exhaustion_constant seller_exhaustion_constant v
+https://api.glassnode.com/v1/metrics/indicators/bvin bvin v
+https://api.glassnode.com/v1/metrics/lightning/channel_size_mean channel_size_mean v
+https://api.glassnode.com/v1/metrics/lightning/channel_size_median channel_size_median v
+https://api.glassnode.com/v1/metrics/lightning/network_capacity_sum network_capacity_sum v
+https://api.glassnode.com/v1/metrics/lightning/channels_count channels_count v
+https://api.glassnode.com/v1/metrics/lightning/nodes_count nodes_count v
+https://api.glassnode.com/v1/metrics/market/mvrv mvrv v
+https://api.glassnode.com/v1/metrics/market/mvrv_z_score mvrv_z_score v
+https://api.glassnode.com/v1/metrics/market/marketcap_realized_usd marketcap_realized_usd v
+https://api.glassnode.com/v1/metrics/market/deltacap_usd deltacap_usd v
+https://api.glassnode.com/v1/metrics/market/price_realized_usd price_realized_usd v
+https://api.glassnode.com/v1/metrics/mining/revenue_sum revenue_sum v
+https://api.glassnode.com/v1/metrics/mining/revenue_from_fees revenue_from_fees v
+https://api.glassnode.com/v1/metrics/mining/volume_mined_sum volume_mined_sum v
+https://api.glassnode.com/v1/metrics/mining/thermocap thermocap v
+https://api.glassnode.com/v1/metrics/mining/marketcap_thermocap_ratio marketcap_thermocap_ratio v
+https://api.glassnode.com/v1/metrics/supply/current_adjusted adjusted_supply v
+https://api.glassnode.com/v1/metrics/supply/issued issuance v
+https://api.glassnode.com/v1/metrics/supply/inflation_rate inflation_rate v
+https://api.glassnode.com/v1/metrics/supply/hodl_waves hodl_waves_1d_1w o.1d_1w	hodl_waves_1m_3m o.1m_3m hodl_waves_1w_1m o.1w_1m hodl_waves_1y_2y o.1y_2y hodl_waves_24h o.24h hodl_waves_2y_3y o.2y_3y hodl_waves_3m_6m o.3m_6m hodl_waves_3y_5y o.3y_5y hodl_waves_5y_7y o.5y_7y hodl_waves_6m_12m o.6m_12m hodl_waves_7y_10y o.7y_10y hodl_waves_more_10y o.more_10y
+https://api.glassnode.com/v1/metrics/supply/rcap_hodl_waves rcap_hodl_waves_1d_1w o.1d_1w rcap_hodl_waves_1m_3m o.1m_3m rcap_hodl_waves_1w_1m o.1w_1m rcap_hodl_waves_1y_2y o.1y_2y rcap_hodl_waves_24h o.24h rcap_hodl_waves_2y_3y o.2y_3y rcap_hodl_waves_3m_6m o.3m_6m rcap_hodl_waves_3y_5y o.3y_5y rcap_hodl_waves_5y_7y o.5y_7y rcap_hodl_waves_6m_12m o.6m_12m rcap_hodl_waves_7y_10y o.7y_10y rcap_hodl_waves_more_10y o.more_10y
+https://api.glassnode.com/v1/metrics/supply/active_more_2y_percent supply_active_more_2y v
+https://api.glassnode.com/v1/metrics/supply/active_more_3y_percent supply_active_more_3y v
+https://api.glassnode.com/v1/metrics/supply/active_more_5y_percent supply_active_more_5y v
+https://api.glassnode.com/v1/metrics/supply/active_24h active_24h v
+https://api.glassnode.com/v1/metrics/supply/active_1d_1w active_1d_1w v
+https://api.glassnode.com/v1/metrics/supply/active_1w_1m active_1w_1m v
+https://api.glassnode.com/v1/metrics/supply/active_1m_3m active_1m_3m v
+https://api.glassnode.com/v1/metrics/supply/active_3m_6m active_3m_6m v
+https://api.glassnode.com/v1/metrics/supply/active_6m_12m active_6m_12m v
+https://api.glassnode.com/v1/metrics/supply/active_1y_2y active_1y_2y v
+https://api.glassnode.com/v1/metrics/supply/active_2y_3y active_2y_3y v
+https://api.glassnode.com/v1/metrics/supply/active_3y_5y active_3y_5y v
+https://api.glassnode.com/v1/metrics/supply/active_5y_7y active_5y_7y v
+https://api.glassnode.com/v1/metrics/supply/active_7y_10y active_7y_10y v
+https://api.glassnode.com/v1/metrics/supply/active_more_10y active_more_10y v
+https://api.glassnode.com/v1/metrics/supply/profit_relative profit_relative v
+https://api.glassnode.com/v1/metrics/supply/profit_sum profit_sum v
+https://api.glassnode.com/v1/metrics/supply/loss_sum loss_sum v
+https://api.glassnode.com/v1/metrics/supply/supply_by_txout_type supply_by_txout_type_total_other o.total_other supply_by_txout_type_total_p2pk o.total_p2pk supply_by_txout_type_total_p2pkh o.total_p2pkh supply_by_txout_type_total_p2sh o.total_p2sh supply_by_txout_type_total_p2tr o.total_p2tr supply_by_txout_type_total_p2wpkh o.total_p2wpkh supply_by_txout_type_total_p2wsh o.total_p2wsh
+https://api.glassnode.com/v1/metrics/transactions/transfers_volume_to_exchanges_sum transfers_volume_to_exchanges_sum v
+https://api.glassnode.com/v1/metrics/transactions/transfers_volume_from_exchanges_sum transfers_volume_from_exchanges_sum v
+https://api.glassnode.com/v1/metrics/transactions/transfers_volume_exchanges_net transfers_volume_exchanges_net v
+https://api.glassnode.com/v1/metrics/transactions/transfers_to_exchanges_count transfers_to_exchanges_count v
+https://api.glassnode.com/v1/metrics/transactions/transfers_from_exchanges_count transfers_from_exchanges_count v
+https://api.glassnode.com/v1/metrics/transactions/transfers_volume_to_exchanges_mean transfers_volume_to_exchanges_mean v
+https://api.glassnode.com/v1/metrics/transactions/transfers_volume_from_exchanges_mean transfers_volume_from_exchanges_mean v
+https://api.glassnode.com/v1/metrics/transactions/transfers_volume_within_exchanges_sum transfers_volume_within_exchanges_sum v
+https://api.glassnode.com/v1/metrics/transactions/transfers_between_exchanges_count transfers_between_exchanges_count v
+https://api.glassnode.com/v1/metrics/transactions/transfers_volume_between_exchanges_sum transfers_volume_between_exchanges_sum v
+https://api.glassnode.com/v1/metrics/transactions/segwit_adoption segwit_adoption o.adoption segwit_utilization o.utilization
+https://api.glassnode.com/v1/metrics/transactions/taproot_adoption taproot_adoption o.adoption taproot_utilization o.utilization
+https://api.glassnode.com/v1/metrics/transactions/transfers_volume_adjusted_sum transfers_volume_adjusted_sum v
+https://api.glassnode.com/v1/metrics/transactions/transfers_volume_adjusted_mean transfers_volume_adjusted_mean v
+https://api.glassnode.com/v1/metrics/transactions/transfers_volume_adjusted_median transfers_volume_adjusted_median v
